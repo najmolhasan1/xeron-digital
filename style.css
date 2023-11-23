@@ -1,0 +1,318 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f3f2f2;
+}
+
+:root{
+    --parimary_color:#01499d;
+    --secondary_color:#017cfd;
+    --tersiary_color:#4996fe;
+    --small_font_size:12px;
+    --gray_color:#797979;
+    --margin_bottom:1rem;
+}
+
+.icon_color{
+    filter: invert(36%) sepia(94%) saturate(3879%) 
+    hue-rotate(199deg) brightness(103%) contrast(105%);
+}
+
+/* Utility Classes start here */
+.global_padding{
+    padding: 0px 100px;
+}
+
+.margin_bottom{
+    margin-bottom: 1.5rem;
+}
+.margin_bottom2{
+    margin-bottom: 40px;
+}
+.small_font{
+    font-size: var(--small_font_size);
+    color: rgb(71, 71, 71);
+}
+.medium_font{
+    font-size:.85rem;
+    margin-bottom: 1rem;
+}
+.heading1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 100%;
+    color: var(--secondary_color);
+}
+.bold{
+    font-weight: bolder;
+    color: black;
+}
+.secondary_color_text{
+    color: var(--parimary_color);
+}
+.color_font{
+    margin-top: 1rem;
+    font: 1rem;
+    color: var(--secondary_color);
+}
+.sub_heading{
+    font-size: 1.85rem;
+    margin-bottom: 40px;
+}
+.sub_heading{
+    margin-bottom: 1.85rem;
+}
+/* Utility Classes ends here */
+
+
+/* primary nav starts here  */
+.primary_nav{
+    height: 40px;
+    width: auto;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background-color: #f4f8ff;
+}
+.find_us{
+    display: flex;
+    align-items: center;
+
+}
+.find_us img{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    filter: grayscale(1);
+
+}
+.find_us img:hover{
+    filter: grayscale(0);
+    transition: all 0.4s ease;
+}
+
+/* find us icon starts here */
+
+.find_us_icon{
+    display: flex;
+    align-items: center; 
+}
+
+.find_us_icon img{
+    height: 30px;
+    width: 30px;
+    margin: 0px 10px;
+    filter: grayscale(1);
+}
+.find_us_icon img:hover{
+    filter: grayscale(0);
+    transition: all 0.4s ease;
+}
+
+/* primary nav ends here  */
+
+/* main nav starts here  */
+.main_nav{
+    height: 55px;
+    width: auto;
+    background-color: rgb(211, 238, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+.logo{
+    color: var(--secondary_color);
+}
+.main_nav_section{
+    height: 50px;
+    width: auto;
+    padding: 10px 100px;
+    display: flex;
+    text-align: center;
+}
+.catagory{
+    margin-left: 40px;
+    text-decoration: none;
+    display: flex;
+    color: var(--gray_color);
+    align-items: center;
+}
+.catagory a{
+    color: var(--secondary_color);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+.catagory a.get_btn{
+    background-color: #017cfd;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+/* main nav ends here  */
+
+
+/* hero section starts here */
+.hero_section{
+    display: flex;
+    align-items: center;
+    height: 480px;
+    width: auto;
+    justify-content: space-between;
+    background-color: white;
+}
+.hero_content{
+    width: 40%;
+}
+.hero_content img{
+    height: 450px;
+    width: 450px;
+}
+.primary_btn{
+    background-color: #017cfd;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+.primary_btn:hover{
+    background-color: #01499d;
+    transition: all .4s ease;
+}
+.secondary_btn{
+    color: var(--parimary_color);
+    border: 1px solid var(--secondary_color);
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.secondary_btn:hover{
+    color: var(--secondary_color);
+    transition: all .4s ease;
+}
+
+/* hero section ends here */
+
+/* services section starts here */
+.services_section{
+    text-align: center;
+    height: 560px;
+    /* background-color: #ececec; */
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.services img{
+    height: 80px;
+    width: 80px;
+}
+
+/* services section ends here */
+
+.content_marketing_box{
+    height: 370px;
+    width: 350px;
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    border-radius: 20px;
+}
+.content_marketing_box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.box_background{
+    height: 380px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* services section ends here */
+
+/* Testimonial section starts here */
+.testimonial_section{
+    height: 500px;
+    background-color: white;
+    padding: 30px 100px;
+}
+.heading_line{
+    text-align: center;
+}
+.Testimonial{
+    display:flex;
+    padding: 30px 0px;
+}
+.testimonial_bg{
+    background-color:rgb(211, 238, 255);
+    padding: 10px;
+    width: 32%;
+    margin-right: 45px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* Testimonial Profile */
+.profile{
+    display: flex;
+}
+.profile img{
+    height: 45px;
+    width: 45px;
+}
+.profile h4{
+    color: var(--secondary_color);
+}
+/* Testimonial Profile ends here */
+
+.dark_color{
+    color: var(--parimary_color);
+}
+.margin_left{
+    margin-left: 20px;
+}
+/* Testimonial section ends here */
+
+/* Last footer section starts here */
+.last_section{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e9e9e9;
+    padding: 40px 100px;
+}
+.footer_link{
+    display: grid;
+    gap: 10px;
+}
+.footer_link a{
+    text-decoration: none;
+    color: black;
+}
+.messege_box{
+    display: flex;
+}
+.email_address{
+    height: 35px;
+    margin-right: 5px;
+    outline: none;
+    padding: 10px;
+}
+.email_box{
+    height: 35px;
+    width: 35px;
+    background-image: url(images/message.gif);
+    background-repeat: none ;
+    background-size: 100%;
+}
+/* last footer section ends here */
